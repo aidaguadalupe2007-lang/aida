@@ -1,0 +1,2 @@
+let resultado;
+for(i)
