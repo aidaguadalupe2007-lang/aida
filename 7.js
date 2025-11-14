@@ -1,12 +1,15 @@
-// Ejercicio 8: Calcular total de compra con descuentos
-let subtotalLibros = 4 * 568;
-subtotalLibros -= subtotalLibros * 0.20;
+const prompt = require("prompt-sync")();
 
-let subtotalDiscos = 3 * 45;
-subtotalDiscos -= subtotalDiscos * 0.15;
-let tocadiscos = 678;
+let horasA = 12, pagoA = 45;
+let horasB = 10, pagoB = 55;
+let horasC = 8, pagoC = 52;
+let horasD = 15, pagoD = 28;
 
-let totalSinDescuento = subtotalLibros + subtotalDiscos + tocadiscos;
-let totalFinal = totalSinDescuento - (totalSinDescuento * 0.02);
+let sueldoA = horasA * pagoA;
+let sueldoB = horasB * pagoB;
+let sueldoC = horasC * pagoC;
+let sueldoD = horasD * pagoD;
 
-console.log( totalSinDescuento(totalFinaltoFixed(2)));
+let sueldoTotal = sueldoA + sueldoB + sueldoC + sueldoD;
+
+console.log(`El sueldo total de Juanita es: $${sueldoTotal}`);

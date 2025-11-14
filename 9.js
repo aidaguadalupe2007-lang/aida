@@ -1,11 +1,13 @@
 const prompt = require("prompt-sync")();
 
-let indice = parseFloat(prompt("Ingresa el índice de contaminación: "));
+let n1 = parseFloat(prompt("Introduce el primer número: "));
+let n2 = parseFloat(prompt("Introduce el segundo número: "));
 
-if (indice <= 37) {
-  console.log("Aceptable");
-} else if (indice <= 55) {
-  console.log("Desagradable");
+if (n1 > n2) {
+  console.log(suma =(n1+n2));
+} else if (n2 > n1) {
+  console.log(suma=(n1+n2));
 } else {
-  console.log("Peligroso");
+  console.log(`Elproducto=(n1*n2`);
 }
+

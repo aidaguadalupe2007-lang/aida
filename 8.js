@@ -1,13 +1,13 @@
-const prompt = require("prompt-sync")();
+// Ejercicio 8: Calcular total de compra con descuentos
+const prompt=require("prompt-sync")();
+let subtotalLibros = 4*568;
+subtotalLibros -= subtotalLibros * 0.20;
 
-let n1 = parseFloat(prompt("Introduce el primer número: "));
-let n2 = parseFloat(prompt("Introduce el segundo número: "));
+let subtotalDiscos = 3 * 45;
+subtotalDiscos -= subtotalDiscos * 0.15;
+let tocadiscos = 678;
 
-if (n1 > n2) {
-  console.log(suma =(n1+n2));
-} else if (n2 > n1) {
-  console.log(suma=(n1+n2));
-} else {
-  console.log(Elproducto=(n1*n2);
-}
+let totalSinDescuento = subtotalLibros + subtotalDiscos + tocadiscos;
+let totalFinal = totalSinDescuento - (totalSinDescuento * 0.02);
 
+console.log( `El total Sin Descuento es:${totalFinal}pesos`);
